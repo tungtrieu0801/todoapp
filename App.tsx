@@ -1,31 +1,18 @@
-import React from "react";
-import { Button, StyleSheet, Text, View } from "react-native";
-
+import { View, Text, StatusBar } from 'react-native'
+import React from 'react'
+import homescreen from './src/home/homescreen'
+import HomeScreen from './src/home/homescreen';
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Text style = {{
-        color: 'red',
-        fontSize:18,
-      }}>Welcome</Text>
-      <Text style={styles.title}>Todo App</Text>
-      <Button title="Hello" onPress={() => {}}/>
-    </View>
+    <>
+      <StatusBar translucent
+      barStyle={'light-content'}
+      backgroundColor={"transparent"} 
+      />
+      <HomeScreen />
+    </>
+
   );
 };
 
 export default App
-
-const styles = StyleSheet.create({
-  container: {
-    flex:1,
-    backgroundColor: "blue",
-    alignItems:'center',
-    justifyContent: 'center'
-  },
-  title: {
-    fontWeight:'700',
-    color:"#fff",
-    fontSize: 32
-  }
-})
