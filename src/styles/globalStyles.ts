@@ -29,6 +29,11 @@ export const globalStyles = StyleSheet.create({
         fontFamily:fontFamily.regular,
         color: colors.text
     },
-    
+    tag: {
+        paddingHorizontal:20,
+        paddingVertical: 4,
+        borderRadius:100,
+        backgroundColor: colors.blue
+    }
 
 })
